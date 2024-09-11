@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .card {
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid lightgray;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            position: relative;
+            box-shadow: 15px 15px 15px rgb(0, 0, 0);
+            transition: all 1s;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #fffdfd;
+        }
+        .card h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #000;
+            margin: 10px 0;
+            font-family: "Anton SC", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .card p {
+            text-align: center;
+            font-weight: 900;
+            margin: 0 0 10px;
+        }
+        .link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            background-color: #27ce43;
+            padding: 10px 0;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .link:hover {
+            background-color: #29ad29;
+        }
+        details {
+            margin: 10px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        details p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .stars {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 115, 0);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            margin-right: 5px;
+        }
+        .scroll{
+            display: block;
+            overflow:scroll;
+            height: 150px;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>&nbsp;<font style="color: rgb(0, 0, 0); margin-top:3px; font-size:17px; font-weight:bold;">4.5</font>
+            </div>
+            <img src="https://img.freepik.com/free-photo/close-up-photo-fresh-organic-peppers-isolated-white-surface_114579-64433.jpg?ga=GA1.1.2033595780.1705061197&semt=sph" alt="Vegetable Image">
+            <h2>Capsicum</h2>
+            <p style="font-size: 20px;">MRP: 40</p>
+            <details>
+                <summary>Details</summary>
+                <div class="scroll">
+                <p>Potatoes are a versatile root vegetable and a staple food in many households. They are rich in vitamins, minerals, and antioxidants, which are vital for maintaining good health. Potatoes are an excellent source of vitamin C, potassium, and fiber.</p>
+                <p>There are many varieties of potatoes, each with its unique flavor and texture. Common types include Russet, Yukon Gold, Red, and Fingerling potatoes. They can be prepared in numerous ways, such as baking, boiling, frying, and mashing.</p>
+                <p>In addition to being delicious, potatoes have several health benefits. They support heart health, improve digestion, and help in maintaining healthy blood pressure levels. Potatoes also provide sustained energy due to their complex carbohydrate content.</p>
+                </div>
+            </details>
+            <a href="#" class="link">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
